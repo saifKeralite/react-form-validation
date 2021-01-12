@@ -4,4 +4,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## URL
 
-Please use this link: [https://saifkeralite.github.io/react-form-validation/](Live)
+Please use this link: [URL](https://saifkeralite.github.io/react-form-validation/)
