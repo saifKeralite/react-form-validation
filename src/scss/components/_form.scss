@@ -1,0 +1,130 @@
+.form-wrapper {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@media screen and (max-width: 1200px) {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.form-box {
+	width: 330px;
+	box-shadow: 1px 1px 5px 0px #9c9c9c;
+	padding: 20px 30px 30px 30px;
+	border-radius: 5px;
+	transform: translateY(100px);
+	animation: set 1s ease 0.4s forwards;
+	opacity: 0;
+	@media screen and (max-width: 1200px) {
+		background: #ffffff;
+	}
+
+	@media screen and (max-width: 360px) {
+		background: #ffffff;
+		width: 90%;
+	}
+
+	.form-row {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	input.form-control {
+		border-radius: 0;
+		border: none;
+		border-bottom: 1px solid #d0d0d0;
+		background: transparent;
+
+		&:focus {
+			outline: none;
+			box-shadow: none;
+		}
+	}
+}
+
+.invalid-feedback {
+	display: block !important;
+}
+
+@keyframes set {
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+input[type="number"] {
+	-moz-appearance: textField;
+	appearance: textField;
+	margin: 0;
+	background: transparent;
+}
+
+input:-webkit-autofill {
+	background: #ffffff;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.center {
+	h4 {
+		text-align: center;
+		font-weight: 400;
+	}
+}
+
+::placeholder {
+	color: #9b9b9b;
+	font-size: 13px;
+}
+
+:-ms-input-placeholder {
+	color: #9b9b9b;
+	font-size: 13px;
+}
+
+::-ms-input-placeholder {
+	color: #9b9b9b;
+	font-size: 13px;
+}
+
+::-webkit-input-placeholder {
+	color: #9b9b9b;
+	font-size: 13px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+	background: #ffffff;
+	-webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+}
+
+.btn-danger {
+	width: 100%;
+	border-radius: 20px;
+	outline: none;
+	box-shadow: none;
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+}
+
+.form-check-label {
+	font-size: 12.9px;
+}
