@@ -22,6 +22,14 @@ body {
 
 .left-image-sec {
 	height: 100vh;
+	@media screen and (max-width: 769px) {
+		height: auto;
+		min-height: 100vh;
+	}
+
+	@media screen and (max-height: 430px) {
+		min-height: 140vh;
+	}
 }
 
 .banner-image-sec,
